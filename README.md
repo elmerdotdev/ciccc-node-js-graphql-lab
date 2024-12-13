@@ -1,6 +1,6 @@
 # GraphQL - Lab Day
 
-**Goal:** Create an Apollo Server/Express/MongoDB backend with MVC and CRUD functionality.
+**Goal:** Create an Apollo Server/Express/MongoDB backend with MVC and CRUD functionality. There will be 3 collections: `products`, `customers`, and `orders` where `orders` is the junction table combining the products to customers.
 
 ## Instructions
 
