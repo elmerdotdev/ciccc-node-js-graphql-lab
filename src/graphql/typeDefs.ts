@@ -5,7 +5,7 @@ export const typeDefs = gql`
     id: ID!,
     productName: String,
     productPrice: Float,
-    customers: [Customer]
+    customers: [Customer] # Product's customers
   }
 
   type Customer {
@@ -13,13 +13,13 @@ export const typeDefs = gql`
     firstName: String,
     lastName: String,
     email: String,
-    products: [Product]
+    products: [Product] # Customer's products
   }
   
   type Order {
     id: ID!,
-    product: Product,
-    customer: Customer
+    product: Product, # Product details
+    customer: Customer # Customer details
   }
 
   type Query {
