@@ -39,10 +39,11 @@ const startServer = async () => {
     // Express Server
     const PORT = process.env.PORT || 3000
     app.listen(PORT, () => {
-      console.log(`Server is running on http://localhost:${PORT}/graphql...`)
+      console.log(`Server is running on http://localhost:${PORT}/graphql`)
     })
   } catch (err) {
-    console.error(`Error starting server...`)
+    console.error(err)
+    throw new Error("Error starting server")
   }
 }
 
