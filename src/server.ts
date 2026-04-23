@@ -1,5 +1,5 @@
 import { ApolloServer } from '@apollo/server'
-import { expressMiddleware } from '@apollo/server/express4'
+import { expressMiddleware } from '@as-integrations/express5';
 import { typeDefs } from './graphql/typeDefs'
 import { resolvers } from './graphql/resolvers'
 import express from 'express'
